@@ -68,7 +68,7 @@ body{
     letter-spacing: 0.9rem;
     display: block;
     margin-bottom: 3.8rem;
-    animation: moveToBottom 1.5s ease-out;
+    animation: moveToLeft 1.5s ease-out;
  }
 
 
@@ -87,7 +87,12 @@ body{
 .btn-white{
     background-color: #fff;
     color: #777;
-    animation: moveToBottom 1s ease-out;
+
+}
+
+.animated-btn{
+    animation: moveToBottom 1.5s ease-out .8s;
+    animation-fill-mode:backwards ;
 }
 
 
@@ -152,8 +157,21 @@ body{
  }
 
 
+ @keyframes moveToLeft {
+     0%{
+        opacity: 0;
+        transform: translateX(150px);
+     }
 
+     80%{
+        transform: translateX(-20px);
+     }
 
+     100% {
+        transform: translateX(0);
+        opacity: 1;
+     }
+ }
 
  @keyframes moveToBottom {
      0%{
