@@ -1,0 +1,39 @@
+.about-img-container{
+    font-size: 2rem;
+    flex:1;
+    position: relative;
+
+        img{
+            position: absolute;
+            width: 50%;
+            min-width:17rem;
+            box-shadow: 0 1rem 1.5rem rgba(87,87,87 ,.75);
+            transition: all .2s;
+            outline-offset: 1.2rem;
+            border-radius: 1rem;
+            &:hover{
+                transform:scale(1.2) translateY(-1rem);
+                box-shadow: 0 1.5rem 1.5rem rgba(20,20,20 ,.75);
+                z-index: 2;
+                outline: 1.2rem solid $color-green-400;
+
+            }
+
+
+        }
+
+        .img-1{
+            top:-1.5rem;
+
+        }
+        .img-2{
+            top: 1.5rem;
+            left: 25rem;
+        }
+        .img-3{
+            top: 12rem;
+            left: 9rem;
+        }
+
+    }
+

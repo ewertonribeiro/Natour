@@ -1,0 +1,22 @@
+{
+  "name": "natour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewertonribeiro/Natour.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewertonribeiro/Natour/issues"
+  },
+  "homepage": "https://github.com/ewertonribeiro/Natour#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
