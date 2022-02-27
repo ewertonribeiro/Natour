@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass --watch scss -o css"
+    "sass": "node-sass --watch scss -o css",
+    "dev": "live-server"
   },
   "repository": {
     "type": "git",
