@@ -152,7 +152,7 @@ body {
       transform: scale(1.2) translateY(-1rem);
       box-shadow: 0 1.5rem 1.5rem rgba(20, 20, 20, 0.75);
       z-index: 2;
-      outline: 1.2rem solid #55c57a; }
+      outline: 1.2rem solid #28b485; }
   .about-img-container .img-1 {
     top: -1.5rem; }
   .about-img-container .img-2 {
@@ -203,9 +203,9 @@ body {
       .about-section .grid-about .about-text .about-button {
         text-transform: uppercase;
         font-size: 1.7rem;
-        color: #55c57a;
+        color: #28b485;
         text-decoration: none;
-        border-bottom: 1px solid #55c57a;
+        border-bottom: 1px solid #28b485;
         padding: .8rem;
         display: inline-block;
         transition: all .2s; }
@@ -215,7 +215,7 @@ body {
           -webkit-box-shadow: 0px 5px 10px -1.5px rgba(87, 87, 87, 0.75);
           -moz-box-shadow: 0px 5px 10px -1.5px rgba(87, 87, 87, 0.75); }
         .about-section .grid-about .about-text .about-button:hover {
-          background-color: #55c57a;
+          background-color: #28b485;
           color: #fff;
           transform: translateY(-0.8rem);
           box-shadow: 0px 10px 21px -3px rgba(87, 87, 87, 0.75);
@@ -256,7 +256,7 @@ body {
       .features-section-container .features-section-card:hover {
         transform: translateY(-10%) scale(1); }
       .features-section-container .features-section-card-icon {
-        color: #55c57a;
+        color: #28b485;
         font-size: 6rem; }
       .features-section-container .features-section-card-title {
         font-weight: bolder; }
@@ -296,18 +296,36 @@ body {
     padding: 4rem 6rem; }
   .tour-section .card-wrapper {
     border-radius: 4px;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    .tour-section .card-wrapper .card-single {
+    background-color: #f7f7f7; }
+    .tour-section .card-wrapper .card {
       width: 100%;
       height: 100%;
-      color: black;
-      font-size: 5rem;
-      transition: all .8s ease; }
-      .tour-section .card-wrapper .card-single-1 {
-        background-color: orange; }
-      .tour-section .card-wrapper .card-single-2 {
-        background-color: green; }
-      .tour-section .card-wrapper .card-single-3 {
-        background-color: purple; }
-      .tour-section .card-wrapper .card-single:hover {
-        transform: rotateY(180deg); }
+      perspective: 150rem;
+      -webkit-perspective: 150rem;
+      position: relative; }
+      .tour-section .card-wrapper .card--side {
+        font-size: 4rem;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        overflow: hidden; }
+        .tour-section .card-wrapper .card--side--front {
+          background-color: #fff; }
+        .tour-section .card-wrapper .card--side--back {
+          transform: rotateY(180deg); }
+          .tour-section .card-wrapper .card--side--back--1 {
+            background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+          .tour-section .card-wrapper .card--side--back--2 {
+            background-image: linear-gradient(to right bottom, #7ed561, #28b485); }
+          .tour-section .card-wrapper .card--side--back--3 {
+            background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+      .tour-section .card-wrapper .card:hover .card--side--front {
+        transform: rotateY(-180deg); }
+      .tour-section .card-wrapper .card:hover .card--side--back {
+        transform: rotateY(0); }
