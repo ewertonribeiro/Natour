@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "node-sass --watch scss -o css",
     "dev": "live-server",
-    "start": "concorrently \"npm run dev\"\"npm run sass\" "
+    "start": "concurrently \"npm run dev\"\"npm run sass\" "
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ewertonribeiro/Natour#readme",
   "dependencies": {
+    "concurrently": "^7.0.0",
     "node-sass": "^7.0.1"
   }
 }
