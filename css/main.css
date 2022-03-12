@@ -224,15 +224,15 @@ body {
 
 .features-section {
   width: 100%;
-  height: 60rem;
+  height: 80rem;
   background-image: linear-gradient(rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8)), url(../img/nat-4.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: skewY(-5deg);
-  margin-top: -7rem; }
+  transform: skewY(-3deg);
+  margin-top: -4rem; }
   .features-section-container {
     width: 80%;
     height: 10rem;
@@ -240,7 +240,7 @@ body {
     gap: 6rem;
     align-items: center;
     justify-content: center;
-    transform: skewY(5deg); }
+    transform: skewY(3deg); }
     .features-section-container .features-section-card {
       width: 25rem;
       color: #777;
@@ -327,6 +327,22 @@ body {
             background-image: linear-gradient(to right bottom, #7ed561, #28b485); }
           .tour-section .card-wrapper .card--side--back--3 {
             background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+          .tour-section .card-wrapper .card--side--back--container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 17rem;
+            gap: 4rem; }
+            .tour-section .card-wrapper .card--side--back--container .container--text {
+              color: #fff;
+              text-align: center; }
+              .tour-section .card-wrapper .card--side--back--container .container--text > p {
+                font-weight: regular;
+                font-size: 1.9rem; }
+              .tour-section .card-wrapper .card--side--back--container .container--text > span {
+                font-size: 8rem;
+                font-weight: 200; }
       .tour-section .card-wrapper .card:hover .card--side--front {
         transform: rotateY(-180deg); }
       .tour-section .card-wrapper .card:hover .card--side--back {

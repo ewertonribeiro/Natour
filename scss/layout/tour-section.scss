@@ -68,7 +68,6 @@
 
       &--back{
         transform: rotateY(180deg);
-        
         &--1{
           background-image:linear-gradient(to right bottom ,$color-orange-200 , $color-orange-400) ;
 
@@ -81,6 +80,30 @@
         &--3{
             background-image: linear-gradient(to right bottom , $color-blue-200 , $color-purple-300);
           }
+
+            &--container{
+            height: 100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 17rem;
+            gap: 4rem;
+            .container--text{
+              color: #fff;
+              text-align: center;
+              >p{
+                font-weight: regular;
+                font-size: 1.9rem;
+              }
+
+                >span{
+                font-size: 8rem;
+                font-weight: 200;
+              }
+
+
+            }
+          }
       }
 
     } 
@@ -92,6 +115,8 @@
 
         .card--side--back{
           transform: rotateY(0);
+
+
         }
       }
 

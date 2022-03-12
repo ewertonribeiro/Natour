@@ -1,6 +1,6 @@
 .features-section {
   width: 100%;
-  height: 60rem;
+  height: 80rem;
   background-image: linear-gradient(
       $color-green-400-rgba,
       $color-green-200-rgba
@@ -11,10 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  transform: skewY(-5deg);
-  margin-top: -7rem;
-
+  transform: skewY(-3deg);
+  margin-top: -4rem;
   &-container {
     width: 80%;
     height: 10rem;
@@ -23,7 +21,7 @@
     align-items: center;
     justify-content: center;
 
-    transform: skewY(5deg);
+    transform: skewY(3deg);
     .features-section-card {
       width: 25rem;
       color: #777;
